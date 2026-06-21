@@ -146,10 +146,3 @@ Ensure you have [Node.js](https://nodejs.org) installed on your system.
 
 ---
 
-## ☁️ Deployment
-
-The project is pre-configured with a `vercel.json` file for single-command deployments on **Vercel** or any static hosting service that supports SPA routing:
-
-1. Push your changes to a GitHub repository.
-2. Go to [Vercel](https://vercel.com) and import the repository.
-3. Vercel automatically detects the Vite framework layout and deploys from the `dist` build path.

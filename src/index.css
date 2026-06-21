@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-mist-gradient bg-mist text-ink font-body antialiased;
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display text-canopy;
+  }
+  /* visible keyboard focus for accessibility */
+  :focus-visible {
+    outline: 2px solid #2F8FBF;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Glassmorphism card — the recurring surface treatment across the app */
+  .glass-card {
+    @apply bg-white/60 backdrop-blur-xl border border-white/70 rounded-3xl shadow-glass;
+  }
+  .glass-card-dark {
+    @apply bg-canopy/40 backdrop-blur-xl border border-white/10 rounded-3xl shadow-glass-lg;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-leaf text-canopy font-semibold px-6 py-3 transition-all duration-300 hover:bg-aqua hover:-translate-y-0.5 hover:shadow-glass-lg active:translate-y-0;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-canopy/15 bg-white/50 text-canopy font-semibold px-6 py-3 transition-all duration-300 hover:border-sky hover:text-sky;
+  }
+  .label-eyebrow {
+    @apply text-xs font-mono uppercase tracking-[0.2em] text-moss/70;
+  }
+  .input-field {
+    @apply w-full rounded-2xl border border-canopy/15 bg-white/70 px-4 py-3 text-ink placeholder:text-ink/40 focus:border-sky focus:ring-2 focus:ring-sky/20 outline-none transition-colors;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

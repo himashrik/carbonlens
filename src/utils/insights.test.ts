@@ -17,7 +17,7 @@ describe('insights', () => {
       },
       emissions: {
         transport: 864, // 150 * 0.192 * 30
-        electricity: 23.75,
+        electricity: 50,
         food: 86.7,
         water: 0.09,
         waste: 4.78,
@@ -32,7 +32,7 @@ describe('insights', () => {
     expect(insights.worstScore).toBe(0); // far above poor transport threshold
     expect(insights.bestCategory).toBe('water');
     expect(insights.bestScore).toBe(100);
-    expect(insights.nextAction).toContain('Switch to public transport twice a week');
+    expect(insights.nextAction).toContain('Consider an electric or hybrid vehicle');
   });
 
   it('should evaluate electricity as the worst performing category when monthly usage is very high', () => {

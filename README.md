@@ -6,6 +6,9 @@
 [![Vite](https://img.shields.io/badge/Vite-8.0-646CFF.svg?logo=vite&logoColor=white)](https://vite.dev)
 [![Vitest](https://img.shields.io/badge/Vitest-Unit_Tests-7A9B57.svg?logo=vitest&logoColor=white)](https://vitest.dev)
 [![A11y Compliant](https://img.shields.io/badge/Accessibility-WCAG_AA-brightgreen)](https://www.w3.org/WAI/standards-guidelines/wcag/)
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployed-000000.svg?logo=vercel&logoColor=white)](https://carbonlens-weld.vercel.app/)
+
+🌍 **Live Demo:** [https://carbonlens-weld.vercel.app/](https://carbonlens-weld.vercel.app/)
 
 CarbonLens is a sleek, single-page React application that empowers households to calculate, analyze, and systematically reduce their monthly carbon footprint. Featuring a premium glassmorphic dashboard, responsive charts, and an interactive goal tracker, CarbonLens helps users understand their environmental impact with immediate feedback.
 
